@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 
-// even and odd
 /*
+// even and odd
 int main() {
     int a;
     printf("Enter a number: ");
@@ -15,3 +15,41 @@ int main() {
     }
 }
 */
+
+
+
+/*
+// leap year
+int main() {
+    int year;
+    printf("Enter year: ");
+    scanf("%d", &year);
+
+    if (year % 400 == 0) {
+        printf("%d is leap year", year);
+    } else if (year % 100 == 0){
+        printf("%d is not leap year", year);
+    } else if (year % 4 == 0) {
+        printf("%d is leap year", year);
+    } else {
+        printf("%d is not leap year", year);
+    }
+
+    return 0;
+}
+*/
+
+
+
+// leap year with logical operator
+int main() {
+    int year;
+    printf("Enter year: ");
+    scanf("%d", &year);
+
+    if (year % 400 == 0 || year % 100 != 0 && year % 4 == 0) {
+        printf("%d is leap year", year);
+    } else {
+        printf("%d is not leap year", year);
+    }
+}
