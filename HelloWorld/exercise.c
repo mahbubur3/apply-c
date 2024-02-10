@@ -41,6 +41,7 @@ int main() {
 
 
 
+/*
 // leap year with logical operator
 int main() {
     int year;
@@ -52,4 +53,30 @@ int main() {
     } else {
         printf("%d is not leap year", year);
     }
+}
+*/
+
+
+
+// palindrome number
+int main() {
+    printf("Palindrome numbers less than 100:\n");
+
+    for (int i = 0; i < 100; i++) {
+        int number = i;
+        int reversedNumber = 0;
+        int originalNumber = number;
+
+        while (number != 0) {
+            int remainder = number % 10;
+            reversedNumber = reversedNumber * 10 + remainder;
+            number /= 10;
+        }
+
+        if (originalNumber == reversedNumber && originalNumber < 100) {
+            printf("%d\n", originalNumber);
+        }
+    }
+
+    return 0;
 }
