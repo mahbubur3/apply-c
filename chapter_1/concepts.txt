@@ -1,0 +1,4 @@
+Variables
+Data types
+User input
+Variables names
