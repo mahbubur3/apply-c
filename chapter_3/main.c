@@ -217,7 +217,7 @@ int main() {
 // }
 
 
-
+/*
 int main() {
     int a = 0, i;
 
@@ -229,6 +229,7 @@ int main() {
     printf("%d %d", i, a);
     return 0;
 }
+*/
 
 // int main() {
 //     int i = 0;
@@ -237,3 +238,19 @@ int main() {
 //     }
 //     return 0;
 // }
+
+
+int main() {
+    int n, i;
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; i++) {
+        if (i % 5 == 0) {
+            printf("%d Yes\n", i);
+        } else {
+            printf("%d No\n", i);
+        }
+    }
+
+    return 0;
+}
