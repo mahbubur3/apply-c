@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-// #include <limits.h>
+#include <limits.h>
 
 /*
 int main() {
@@ -1017,6 +1017,7 @@ int main() {
 */
 
 
+/*
 int main() {
     int n, s, k;
     scanf("%d", &n);
@@ -1048,4 +1049,130 @@ int main() {
     
     return 0;
 }
+*/
+
+
+//------------ MODULE 15.5 PROBLEMS
+
+/* int sum(int x, int y){
+    int result = x + y;
+    return result;
+}
+
+int main() {
+    int x, y;
+    scanf("%d %d", &x, &y);
+    printf("%d", sum(x, y));
+
+    return 0;
+} */
+
+/*
+void minAndMax(int* arr, int n) {
+    int min = arr[0];
+    int max = arr[0];
+
+    for (int i = 0; i < n; i++) {
+        if (arr[i] < min) {
+            min = arr[i];
+        }
+
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+
+    printf("%d %d", min, max);
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    minAndMax(arr, n);
+
+    return 0;
+}
+*/
+/*
+void sorting(int arr[], int n) {
+
+    // Store the first three elements
+    int a = arr[0];
+    int b = arr[1];
+    int c = arr[2];
+
+    // Used selection sort in the array
+    for (int i = 0; i <= n-1; i++) {
+        for (int j = i+1; j < n; j++) {
+            if (arr[i] > arr[j]) {
+
+                // Swap the elements
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+
+    // Print the sorted array
+    for (int i = 0; i < n; i++) {
+        printf("%d\n", arr[i]);
+    }
+
+    // Print the original first three elements with blank line
+    printf("\n%d\n%d\n%d\n", a, b, c);
+}
+
+int main() {
+    int arr[3], n = 3;
+
+    // Input elements of the array
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    // Call the sorting function
+    sorting(arr, n);
+
+    return 0;
+}
+*/
+
+/*
+// void printNumbers(void) {
+//     int x;
+//     scanf("%d", &x);
+
+//     for (int i = 1; i <= x; i++) {
+//         printf("%d ", i);
+//     }
+// }
+
+// int main() {
+//     printNumbers();
+
+//     return 0;
+// }
+
+
+/* void printNumbers(int n) {
+    for (int i = 1; i <= n; i++) {
+        printf("%d ", i);
+    }
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    printNumbers(n);
+
+    return 0;
+}
+*/
 

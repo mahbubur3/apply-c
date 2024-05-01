@@ -128,7 +128,7 @@ int main() {
 */
 
 
-/*
+
 // FUNCTION AND ARRAY
 void fun(int arr[], int n) {
     for (int i = 0; i < n; i++) {
@@ -144,6 +144,7 @@ int main() {
 }
 
 
+/*
 void fun(int* arr, int n) {
     for (int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
@@ -191,19 +192,20 @@ int main() {
 }
 */
 
-
+/*
 // FUNCTION WITH string AS REFERENCE
-// void newStr(char* arr) {
-//     arr[0] = 'd';
-// }
+void newStr(char* arr) {
+    arr[0] = 'd';
+}
 
-// int main() {
-//     char arr[] = "bangladesh";
-//     newStr(arr);
-//     printf("%s", arr);
+int main() {
+    char arr[] = "bangladesh";
+    newStr(arr);
+    printf("%s", arr);
 
-//     return 0;
-// }
+    return 0;
+}
+*/
 
 
 //-----------------------------------------
