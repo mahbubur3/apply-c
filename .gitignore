@@ -1,14 +1,23 @@
-/chapter_1/main.exe
-/chapter_1/main.o
+/chapter1.exe
+/chapter1.o
 
-/chapter_2/main.exe
-/chapter_2/main.o
+/chapter2.exe
+/chapter2.o
 
-/chapter_3/main.exe
-/chapter_3/main.o
+/chapter3.exe
+/chapter3.o
 
-/cf_problems.exe
-/cf_problems.o
+/chapter15.exe
+/chapter15.o
 
-/chapter_4/main.exe
-/chapter_4/main.o
+/chapter14.exe
+/chapter14.o
+
+/chapter13.exe
+/chapter13.o
+
+/ruff.exe
+/ruff.o
+
+/AssiutUniversityProblems.exe
+/AssiutUniversityProblems.o

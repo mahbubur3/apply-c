@@ -1,2 +1,0 @@
-Operators: Arithmetic, Relational, Logical
-Conditions: if, else, else if
