@@ -87,32 +87,33 @@ int main() {
 
 
 // CALL BY REFERENCE
-/*
-void fun(int* p) {
-    printf("%p\n", p);
-}
 
-int main() {
-    int x = 100;
-    fun(&x);
+// void fun(int* p) {
+//     printf("%p\n", p);
+// }
 
-    return 0;
-}
-*/
-/*
-void fun(int* p) {
+// int main() {
+//     int x = 100;
+//     fun(&x);
+
+//     return 0;
+// }
+
+
+void fun(int* p, int* q) {
     // printf("value of x in main function: %d\n", *p);
     *p = 500;
+    *q = 1000;
 }
 
 int main() {
-    int x = 100;
-    fun(&x);
-    printf("%d", x);
+    int x = 100, y = 200;
+    fun(&x, &y);
+    printf("%d %d", x, y);
 
     return 0;
 }
-*/
+
 
 
 /*
@@ -130,7 +131,7 @@ int main() {
 
 
 // FUNCTION AND ARRAY
-void fun(int arr[], int n) {
+/* void fun(int arr[], int n) {
     for (int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
     }
@@ -141,11 +142,9 @@ int main() {
     fun(arr, 5);
 
     return 0;
-}
+} */
 
-
-/*
-void fun(int* arr, int n) {
+/* void fun(int* arr, int n) {
     for (int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
     }
@@ -156,8 +155,8 @@ int main() {
     fun(arr, 5);
 
     return 0;
-}
-*/
+} */
+
 
 
 /*
@@ -175,7 +174,7 @@ int main() {
 */
 
 
-/*
+
 // FUNCTION WITH ARRAY AS REFERENCE
 void newArr(int* arr, int l) {
     arr[0] = 20;
@@ -190,7 +189,7 @@ int main() {
 
     return 0;
 }
-*/
+
 
 /*
 // FUNCTION WITH string AS REFERENCE

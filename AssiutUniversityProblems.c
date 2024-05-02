@@ -1144,24 +1144,24 @@ int main() {
 }
 */
 
-/*
-// void printNumbers(void) {
-//     int x;
-//     scanf("%d", &x);
 
-//     for (int i = 1; i <= x; i++) {
-//         printf("%d ", i);
-//     }
-// }
+void printNumbers(void) {
+    int x;
+    scanf("%d", &x);
 
-// int main() {
-//     printNumbers();
+    for (int i = 1; i <= x; i++) {
+        printf("%d ", i);
+    }
+}
 
-//     return 0;
-// }
+int main() {
+    printNumbers();
+
+    return 0;
+}
 
 
-/* void printNumbers(int n) {
+void printNumbers(int n) {
     for (int i = 1; i <= n; i++) {
         printf("%d ", i);
     }
@@ -1170,9 +1170,7 @@ int main() {
 int main() {
     int n;
     scanf("%d", &n);
-    printNumbers(n);
+    // printNumbers(n);
 
     return 0;
 }
-*/
-
