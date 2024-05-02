@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 
 // PROBLEM 1
@@ -84,7 +85,7 @@ int main() {
 } */
 
 // PROBLEM 4
-void changeIt(int* arr, int n) {
+/* void changeIt(int* arr, int n) {
     arr[n - 1] = 100;
 }
 
@@ -104,4 +105,4 @@ int main() {
     }
 
     return 0;
-}
+} */
