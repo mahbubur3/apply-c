@@ -100,7 +100,7 @@ int main() {
 // }
 
 
-void fun(int* p, int* q) {
+/* void fun(int* p, int* q) {
     // printf("value of x in main function: %d\n", *p);
     *p = 500;
     *q = 1000;
@@ -112,7 +112,7 @@ int main() {
     printf("%d %d", x, y);
 
     return 0;
-}
+} */
 
 
 

@@ -1145,12 +1145,16 @@ int main() {
 */
 
 
-void printNumbers(void) {
+/* void printNumbers(void) {
     int x;
     scanf("%d", &x);
 
     for (int i = 1; i <= x; i++) {
-        printf("%d ", i);
+        if (i == x) {
+            printf("%d", i);
+        } else {
+            printf("%d ", i);
+        }
     }
 }
 
@@ -1158,19 +1162,20 @@ int main() {
     printNumbers();
 
     return 0;
-}
+} */
 
-
-void printNumbers(int n) {
-    for (int i = 1; i <= n; i++) {
-        printf("%d ", i);
-    }
+void swapNum(int* x, int* y) {
+    int temp = *x;
+    *x = *y;
+    *y = temp;
 }
 
 int main() {
-    int n;
-    scanf("%d", &n);
-    // printNumbers(n);
+    int x, y;
+    scanf("%d %d", &x, &y);
+
+    swapNum(&x, &y);
+    printf("%d %d", x, y);
 
     return 0;
 }
