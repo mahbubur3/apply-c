@@ -176,7 +176,7 @@ int main() {
 
 
 // FUNCTION WITH ARRAY AS REFERENCE
-void newArr(int* arr, int l) {
+/* void newArr(int* arr, int l) {
     arr[0] = 20;
 }
 
@@ -188,7 +188,7 @@ int main() {
     }
 
     return 0;
-}
+} */
 
 
 /*
@@ -212,3 +212,11 @@ int main() {
 //     int arr[4] = {1, 2, 3, 4};
 //     printf("%d\n", *arr);
 // }
+
+int main() {
+    int x = 10;
+    int* ptr = &x;
+    printf("Address of x: %p\n", &x);
+
+    return 0;
+}
