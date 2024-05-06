@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <math.h>
 
 // PROBLEM 1
 /* int myAbs(int x) {
@@ -236,3 +237,168 @@ int main() {
 } */
 
 
+/* int main() {
+    int n, s, d;
+    scanf("%d", &n);
+
+    s = n - 1;
+    d = 1; 
+
+    for (int i = 1; i <= (2*n)-1; i++) {
+        for (int j = 1; j <= s; j++) {
+            printf(" ");
+        }
+
+        for (int j = 1; j <= d; j++) {
+            if (i % 2 == 0) {
+                printf("-");
+            } else {
+                printf("#");
+            }
+        }
+
+        if (i < n) {
+            s--;
+            d += 2;
+        } else {
+            s++;
+            d -= 2;
+        }
+        printf("\n");
+    }
+
+    return 0;
+} */
+
+
+/* void reversePattern() {
+    int n, s, k;
+    scanf("%d", &n);
+
+    s = n - 1;
+    k = 1;
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 1; j <= s; j++) {
+            printf(" ");
+        }
+
+        for (int j = k; j >= 1; j--) {
+            printf("%d", j);
+        }
+
+        s--;
+        k++;
+        printf("\n");
+    }
+}
+
+int main() {
+    reversePattern();
+
+    return 0;
+} */
+
+
+/* int countBeforeOne(int* arr, int n) {
+    int count = 0;
+
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == 1) {
+            break;
+        } else {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("%d", countBeforeOne(arr, n));
+
+    return 0;
+} */
+
+
+/* int isPalindrome(char* str) {
+    int check = 1, i = 0, j = strlen(str) - 1;
+
+    while(i < j) {
+        if (str[i] != str[j]) {
+            check = 0;
+            break;
+        } else {
+            i++;
+            j--;
+        }
+    }
+
+    return check;
+}
+
+int main() {
+    char str[1001];
+    scanf("%s", str);
+
+    int check = isPalindrome(str);
+
+    if (check == 0) {
+        printf("no");
+    } else {
+        printf("yes");
+    }
+
+    return 0;
+} */
+
+// int main() {
+//     int a, b, c, d;
+//     scanf("%d %d %d %d", &a, &b, &c, &d);
+
+//     double calculateAb = pow(a, b);
+//     double calculateCd = pow(c, d);
+
+//     if (calculateAb > calculateCd) {
+//         printf("YES");
+//     } else {
+//         printf("NO");
+//     }
+
+//     return 0; 
+// }
+
+
+void showAverage() {
+    int n;
+    scanf("%d", &n);
+    
+    double arr[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    double sum = 0;
+
+    for (int i = 0; i < n; i++) {
+        sum = sum + arr[i];
+    }
+    
+    double avg = sum / n;
+    
+    printf("%lf", avg);
+}
+
+int main() {
+    showAverage();
+    
+    return 0;
+}
