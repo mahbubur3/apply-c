@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/* void oneToFive(int i) {
+void oneToFive(int i) {
     if (i == 6) {
         return;
     }
@@ -10,7 +10,7 @@
 int main() {
     showNumbers(1);
     return 0;
-} */
+}
 
 
 /* void fiveToOne(int i) {
@@ -78,7 +78,7 @@ int main() {
 
 
 // ARRAY PRINT
-/* void numbers(int arr[], int n, int i) {
+void numbers(int arr[], int n, int i) {
     if (i == n) {
         return;
     }
@@ -95,12 +95,12 @@ int main() {
     }
     numbers(arr, n, 0);
     return 0;
-} */
+}
 
 
 
 // PRINT 5 TO 1 REVERSE WAY
-/* void reversePrint(int i) {
+void reversePrint(int i) {
     if (i == 6) {
         return;
     }
@@ -110,7 +110,7 @@ int main() {
 int main() {
     reversePrint(1);
     return 0;
-} */
+}
 
 
 

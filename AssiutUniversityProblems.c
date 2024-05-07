@@ -1180,7 +1180,9 @@ int main() {
     return 0;
 } */
 
-// MODULE 18.5
+
+// MODULE 18.5 PROBLEMS
+
 /* void strPrint(int n) {
     if (n == 0) {
         return;
@@ -1242,3 +1244,82 @@ int main() {
 
     return 0;
 } */
+
+
+/* void printEven(int a[], int n, int i) {
+    if (i == n) {
+        return;
+    }
+
+    if (a[i] % 2 == 0) {
+        printf("%d ", a[i]);
+    }
+    
+    printEven(a, n, i+1);
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    int a[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &a[n]);
+    }
+
+    printEven(a, n, 0);
+
+    return 0;
+} */
+
+/* void printEven(int a[], int n, int i) {
+    if (i == n) {
+        return;
+    }
+    
+    printEven(a, n, i + 1);
+    
+    if (i % 2 == 0) {
+        printf("%d ", a[i]);
+    }
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    
+    int a[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
+    }
+    
+    printEven(a, n, 0);
+    
+    return 0;
+} */
+
+
+int summation(int a[], int n, int i) {
+    if (i == n) {
+        return 0;
+    }
+
+    int sum = summation(a, n, i + 1);
+    sum = sum + a[i];
+    return sum;
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    int a[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
+    }
+
+    int result = summation(a, n, 0);
+    printf("%d", result);
+
+    return 0;
+}
