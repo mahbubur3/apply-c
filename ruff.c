@@ -376,29 +376,21 @@ int main() {
 //     return 0; 
 // }
 
-
-void showAverage() {
-    int n;
-    scanf("%d", &n);
-    
-    double arr[n];
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+void strPrint(int n) {
+    if (n == 0) {
+        return;
     }
 
-    double sum = 0;
+    printf("I love Recursion\n");
 
-    for (int i = 0; i < n; i++) {
-        sum = sum + arr[i];
-    }
-    
-    double avg = sum / n;
-    
-    printf("%lf", avg);
+    strPrint(n - 1);
 }
 
 int main() {
-    showAverage();
-    
+    int n;
+    scanf("%d", &n);
+
+    strPrint(n);
+
     return 0;
 }

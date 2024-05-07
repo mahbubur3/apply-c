@@ -1164,7 +1164,7 @@ int main() {
     return 0;
 } */
 
-void swapNum(int* x, int* y) {
+/* void swapNum(int* x, int* y) {
     int temp = *x;
     *x = *y;
     *y = temp;
@@ -1178,4 +1178,67 @@ int main() {
     printf("%d %d", x, y);
 
     return 0;
+} */
+
+// MODULE 18.5
+/* void strPrint(int n) {
+    if (n == 0) {
+        return;
+    }
+
+    printf("I love Recursion\n");
+
+    strPrint(n - 1);
 }
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    strPrint(n);
+
+    return 0;
+} */
+
+/* void oneToN(int n, int i) {
+    if (i == n + 1) {
+        return;
+    }
+    
+    printf("%d\n", i);
+
+    oneToN(n, i + 1);
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    oneToN(n, 1);
+
+    return 0;
+} */
+
+/* void n_to_one(int n) {
+    if (n == 0) {
+        return;
+    }
+
+    if (n == 1) {
+        printf("%d", n);
+    } else {
+        printf("%d ", n);
+    }
+
+    n_to_one(n - 1);
+
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    n_to_one(n);
+
+    return 0;
+} */
