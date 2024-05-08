@@ -1305,10 +1305,11 @@ int main() {
     if (i == n) {
         return 0;
     }
-
+    
     int sum = summation(a, n, i + 1);
-    sum = sum + a[i];
-    return sum;
+    // sum = sum + a[i];
+
+    return sum + a[i];
 }
 
 int main() {
@@ -1316,12 +1317,12 @@ int main() {
     scanf("%d", &n);
 
     int a[n];
+
     for (int i = 0; i < n; i++) {
         scanf("%d", &a[i]);
     }
 
-    int result = summation(a, n, 0);
-    printf("%d", result);
+    printf("%d", summation(a, n, 0));
 
     return 0;
 } */
@@ -1367,8 +1368,7 @@ int main() {
 }  */
 
 
-
-int main() {
+/* int main() {
     int n, m;
     scanf("%d %d", &n, &m);
 
@@ -1398,6 +1398,142 @@ int main() {
     } else {
         printf("will not take number");
     }
+
+    return 0;
+} */
+
+
+// MODULE 19
+
+// w- mirror array
+/* int main() {
+    int n, m;
+    scanf("%d %d", &n, &m);
+
+    int a[n][m];
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    for (int i = 0; i < n; i++) {
+        for (int j = m - 1; j >= 0; j--) {
+            printf("%d ", a[i][j]);
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+} */
+
+/* 
+int main() {
+    int r, c;
+    scanf("%d %d", &r, &c);
+
+    int a[r][c], b[r][c], x[r][c];
+
+    // Input of A array
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    // Input of B array
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            scanf("%d", &b[i][j]);
+        }
+    }
+
+    // Two array summation
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            x[i][j] = a[i][j] + b[i][j];
+        }
+    }
+
+    // Print X array
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            printf("%d ", x[i][j]);
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+} */
+
+
+// d- print digits using recursion
+/* void digitsPrint(int n) {
+    if (n == 0) {
+        return;
+    }
+
+    int lastDigit = n % 10;
+
+    digitsPrint(n / 10);
+
+    printf("%d ", lastDigit);
+}
+
+int main() {
+    int test;
+    scanf("%d", &test);
+
+    for (int t = 0; t < test; t++) {
+        int n;
+        scanf("%d", &n);
+
+        digitsPrint(n);
+
+        if (n == 0) {
+            printf("0");
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+} */
+
+
+// i- count vowels
+int countVowels(char str[], int i) {
+
+    // base case
+    if (str[i] == '\0') {
+        return 0;
+    }
+
+    int dueIndexes = countVowels(str, i + 1);
+
+    // convert capital to small
+    if (str[i] >= 'A' && str[i] <= 'Z') {
+        str[i] += 32;
+    }
+
+    // check vowels or not
+    if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u') {
+        return dueIndexes + 1;
+    } else {
+        dueIndexes;
+    }
+}
+
+int main() {
+    char str[201];
+    fgets(str, 201, stdin);
+
+    int count = countVowels(str, 0);
+
+    printf("%d\n", count);
 
     return 0;
 }
