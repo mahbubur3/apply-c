@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <limits.h>
+#include <math.h>
+#include <stdlib.h>
 
 /*
 int main() {
@@ -1299,7 +1301,7 @@ int main() {
 } */
 
 
-int summation(int a[], int n, int i) {
+/* int summation(int a[], int n, int i) {
     if (i == n) {
         return 0;
     }
@@ -1320,6 +1322,82 @@ int main() {
 
     int result = summation(a, n, 0);
     printf("%d", result);
+
+    return 0;
+} */
+
+
+/* int main() {
+    int n;
+    scanf("%d", &n);
+ 
+    int a[n][n];
+ 
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            scanf("%d", &a[i][j]);
+        }
+    }
+ 
+    int mainDiagonalSum = 0;
+    int secondaryDiagonalSum = 0;
+ 
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (i == j) {
+                mainDiagonalSum += a[i][j];
+            }
+        }
+    }
+    
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (i + j == n - 1) {
+                secondaryDiagonalSum += a[i][j];
+            }
+        }
+    }
+    
+    int difference = mainDiagonalSum - secondaryDiagonalSum;
+    
+    int convertAbsolute = abs(difference);
+    printf("%d", convertAbsolute);
+    
+    return 0;
+}  */
+
+
+
+int main() {
+    int n, m;
+    scanf("%d %d", &n, &m);
+
+    int a[n][m];
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    int x;
+    scanf("%d", &x);
+
+    int flag = 0; 
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            if (a[i][j] == x) {
+                flag = 1;
+            }
+        }
+    }
+
+    if (flag == 0) {
+        printf("will take number");
+    } else {
+        printf("will not take number");
+    }
 
     return 0;
 }
