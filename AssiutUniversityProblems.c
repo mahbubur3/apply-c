@@ -1505,7 +1505,7 @@ int main() {
 
 
 // i- count vowels
-int countVowels(char str[], int i) {
+/* t countVowels(char str[], int i) {
 
     // base case
     if (str[i] == '\0') {
@@ -1523,7 +1523,7 @@ int countVowels(char str[], int i) {
     if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u') {
         return dueIndexes + 1;
     } else {
-        dueIndexes;
+        return dueIndexes;
     }
 }
 
@@ -1531,9 +1531,63 @@ int main() {
     char str[201];
     fgets(str, 201, stdin);
 
-    int count = countVowels(str, 0);
-
-    printf("%d\n", count);
+    printf("%d", countVowels(str, 0));
 
     return 0;
+} */
+
+
+// j- factorial
+/* long long int factorial(long long int n) {
+    if (n == 0) {
+        return 1;
+    }
+    
+    long long int result = factorial(n - 1);
+
+    return n * result;
 }
+
+int main() {
+    long long int n;
+    scanf("%lld", &n);
+
+    long long result = factorial(n);
+
+    printf("%lld", result);
+
+    return 0;
+} */
+
+// max number
+/* int maxNumber(int a[], int n, int i) {
+    if (i == n) {
+        return INT_MIN;
+    }
+
+    int max = maxNumber(a, n, i + 1);
+
+    if (a[i] > max) {
+        return a[i];
+    } else {
+        return max;
+    }
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    int a[n];
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
+    }
+
+    int result = maxNumber(a, n, 0);
+
+    printf("%d", result);
+    
+    return 0;
+} */
+
