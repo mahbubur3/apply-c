@@ -1429,7 +1429,7 @@ int main() {
     return 0;
 } */
 
-/* 
+
 int main() {
     int r, c;
     scanf("%d %d", &r, &c);
@@ -1467,7 +1467,7 @@ int main() {
     }
 
     return 0;
-} */
+}
 
 
 // d- print digits using recursion
@@ -1591,3 +1591,155 @@ int main() {
     return 0;
 } */
 
+//! MODULE 19.5 PROBLEMS
+
+// int main() {    
+//     int x, p; 
+//     scanf("%d", &x, &p);
+
+//     int per = 100*
+
+//     return 0;
+// }
+
+// B. MEMO AND MOMO
+/* int main() {
+    long long int a, b, k;
+    scanf("%lld %lld %lld", &a, &b, &k);
+
+    if (a % k == 0 && b % k == 0) {
+        printf("Both");
+    } else if (a % k == 0 && b % k != 0) {
+        printf("Memo");
+    } else if (b % k == 0 && a % k != 0) {
+        printf("Momo");
+    } else {
+        printf("No One");
+    }
+
+    return 0;
+} */
+
+// A. SQUARE OR RECTANGLE
+/* int main() {
+    int t;
+    scanf("%d", &t);
+
+    for (int i = 0; i < t; i++) {
+        int w, h;
+        scanf("%d %d", &w, &h);
+
+        if (w == h) {
+            printf("Square\n");
+        } else {
+            printf("Rectangle\n");
+        }
+    }
+
+    return 0;
+} */
+
+// C. CHOOSE ELEMENTS
+/* int main() {
+    long long int n, k;
+    scanf("%lld %lld", &n, &k);
+
+    int a[n];
+
+    // array input
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
+    }
+
+    // sorting descending order
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = i + 1; j < n; j++) {
+            if (a[i] < a[j]) {
+                int temp = a[i];
+                a[i] = a[j];
+                a[j] = temp;
+            }
+        }
+    }
+
+    long long int sum = 0;
+
+    // sum of k elements after sorting
+    for (int i = 0; i < k; i++) {
+        if (a[i] > 0) {
+            sum = sum + a[i];
+        }
+    }
+
+    printf("%lld", sum);
+
+    return 0;
+} */
+
+// LUCKY ARRAY
+/* int main() {
+    int n;
+    scanf("%d", &n);
+
+    int a[n];
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
+    }
+
+    int min = INT_MAX;
+
+    for (int i = 0; i < n; i++) {
+        if (a[i] < min) {
+            min = a[i];
+        }
+    }
+
+    int count = 0;
+
+    for (int i = 0; i < n; i++) {
+        if (a[i] == min) {
+            count++;
+        }
+    }
+
+    if (count % 2 != 0) {
+        printf("Lucky");
+    } else {
+        printf("Unlucky");
+    }
+
+    return 0;
+} */
+
+// LUCKY ARRAY with travers
+/* int main() {
+    int n;
+    scanf("%d", &n);
+
+    int a[n];
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
+    }
+
+    int min = a[0];
+    int count = 0;
+
+    for (int i = 0; i < n; i++) {
+        if (a[i] < min) {
+            min = a[i];
+            count = 1; // reset count for new minimum
+        } else if (a[i] == min) {
+            count++; // increment count for existing minimum
+        }
+    }
+
+    if (count % 2 != 0) {
+        printf("Lucky");
+    } else {
+        printf("Unlucky");
+    }
+
+    return 0;
+} */
