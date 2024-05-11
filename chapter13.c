@@ -65,9 +65,9 @@ int main() {
 */
 
 
-/*
+
 // PATTERN THREE
-int main() {
+/* int main() {
     int n, k = 1;
     scanf("%d", &n);
     
@@ -80,8 +80,8 @@ int main() {
     }
     
     return 0;
-}
-*/
+} */
+
 
 /*
 // PATTERN THREE with reverse
@@ -105,9 +105,9 @@ int main() {
 */
 
 
-/*
+
 // PATTERN FOUR
-int main() {
+/* int main() {
     int n, s, k;
     scanf("%d", &n);
     
@@ -118,9 +118,11 @@ int main() {
         for (int j = 1; j <= s; j++) {
             printf(" ");
         }
+
         for (int j = 1; j <= k; j++) {
             printf("*");
         }
+
         if (i <= n - 1) {
             s--;
             k += 2;
@@ -128,12 +130,13 @@ int main() {
             s++;
             k -= 2;
         }
+
         printf("\n");
     }
     
     return 0;
-}
-*/
+} */
+
 
 
 /*
@@ -172,7 +175,7 @@ int main() {
 
 
 // SELECTION SORT 
-int main() {
+/* int main() {
     int n;
     scanf("%d", &n);
     
@@ -207,5 +210,38 @@ int main() {
         printf("%d ", arr[i]);
     }
     
+    return 0;
+} */
+
+
+// DIFFERENT TYPE OF PETTERN
+int main() {
+    int r, c;
+    scanf("%d %d", &r, &c);
+
+    for (int i = 1; i <= r; i++) {
+        if (i % 2 != 0) {
+            for (int j = 1; j <= c; j++) {
+                printf("#");
+            }
+        } else {
+            if (i % 4 == 0) {
+                printf("#");
+
+                for (int i = 2; i <= c; i++) {
+                    printf(".");
+                }
+            } else {
+                for(int i = 2; i <= c; i++) {
+                    printf(".");
+                }
+
+                printf("#");
+            }
+        }
+
+        printf("\n");
+    }
+
     return 0;
 }
