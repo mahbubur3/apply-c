@@ -121,7 +121,6 @@ int main() {
     scanf("%d %d", &row, &col);
 
     int arr[row][col];
-
     for (int i = 0; i < row; i++) {
         for (int j = 0; j < col; j++) {
             scanf("%d", &arr[i][j]);
@@ -129,7 +128,6 @@ int main() {
     }
 
     int countZero = 0;
-
     for (int i = 0; i < row; i++) {
         for (int j = 0; j < col; j++) {
             if (arr[i][j] == 0) {
@@ -139,7 +137,6 @@ int main() {
     }
 
     int checkElements = row * col;
-
     if (checkElements == countZero) {
         printf("Zero Matrix\n");
     } else {
@@ -151,8 +148,8 @@ int main() {
 
 
 // CHECK DIAGONAL MATRIX OR NOT
-/* // Primary
-int main() {
+// Primary
+/* int main() {
     int row, col;
     scanf("%d %d", &row, &col);
 
@@ -169,10 +166,11 @@ int main() {
     } else {
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
+                // check i is equal or not to j
                 if (i == j) {
                     continue;
                 }
-
+                // check without diagonal other number is zero or not
                 if (arr[i][j] != 0) {
                     flag = 0;
                 }
@@ -229,7 +227,7 @@ int main() {
 
 
 // CHECK SCALAR MATRIX OR NOT
-/* int main() {
+int main() {
     int row, col;
     scanf("%d %d", &row, &col);
 
@@ -246,11 +244,13 @@ int main() {
     } else {
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
+                // check i is equal or not to j
                 if (i == j) {
+                    // check all diagonal elements are equal or not
                     if (arr[i][j] != arr[0][0]) {
                         flag = 0;
                     }
-
+                // check without diagonal other number is zero or not
                 } else if (arr[i][j] != 0) {
                     flag = 0;
                 }
@@ -265,7 +265,7 @@ int main() {
     }
 
     return 0;
-} */
+}
 
 
 // CHECK UNIT MATRIX OR NOT

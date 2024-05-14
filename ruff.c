@@ -430,7 +430,7 @@ int main() {
     return 0;
 } */
 
-int main() {
+/* int main() {
     int n, s, k;
     scanf("%d", &n);
 
@@ -467,6 +467,140 @@ int main() {
         }
 
         printf("\n");
+    }
+
+    return 0;
+} */
+
+/* int main() {
+    int row, col;
+    scanf("%d %d", &row, &col);
+
+    int a[row][col];
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < col; j++) {
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < col; j++) {
+            printf("%d", a[i][j]);
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+} */
+
+/* int main() {
+    int r, c;
+    scanf("%d %d", &r, &c);
+
+    int a[r][c];
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            scanf("%d", &a[i][c]);
+        }
+    }
+
+    int flag = 1;
+    if (r == c) {
+        for (int i = 0; i < r; i++) {
+            for (int j = 0; j < c; j++) {
+                if (i == j) {
+                    continue;
+                }
+
+                if (a[i][j] != 0) {
+                    flag = 0;
+                }
+            }
+        }
+    } else {
+        flag = 0;
+    }
+
+    if (flag == 1) {
+        printf("Diagonal Matrix\n");
+    } else {
+        printf("Not Diagonal Matrix\n");
+    }
+
+    return 0;
+} */
+
+
+/* int main() {
+    int r, c;
+    scanf("%d %d", &r, &c);
+
+    int a[r][c];
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    int flag = 1;
+    if (r != c) {
+        flag = 0;
+    } else {
+        for (int i = 0; i < r; i++) {
+            for (int j = 0; j < c; j++) {
+                if (i == j) {
+                    if (a[i][j] != a[0][0]) {
+                        flag = 0;
+                    }
+                } else if (a[i][j] != 0) {
+                    flag = 0;
+                }
+            }
+        }
+    }
+
+    if (flag == 1) {
+        printf("Scalar Matrix\n");
+    } else {
+        printf("Not Scalar Matrix\n");
+    }
+
+    return 0;
+} */
+
+int main() {
+    int r, c;
+    scanf("%d %d", &r, &c);
+
+    int a[r][c];
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    int flag = 1;
+    if (r != c) {
+        flag = 0;
+    } else {
+        for (int i = 0; i < r; i++) {
+            for (int j = 0; j < c; j++) {
+                if (i == j) {
+                    if (a[i][j] != 1) {
+                        flag = 0;
+                    }
+                } else if (a[i][j] != 0) {
+                    flag = 0;
+                }
+            }
+        }
+    }
+
+    if (flag == 1) {
+        printf("Unit Matrix\n");
+    } else {
+        printf("Not Unit Matrix\n");
     }
 
     return 0;
