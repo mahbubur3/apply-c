@@ -1328,12 +1328,11 @@ int main() {
 } */
 
 
-/* int main() {
+int main() {
     int n;
     scanf("%d", &n);
  
     int a[n][n];
- 
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             scanf("%d", &a[i][j]);
@@ -1342,30 +1341,37 @@ int main() {
  
     int mainDiagonalSum = 0;
     int secondaryDiagonalSum = 0;
- 
+    
+    // Sum of primary diagonal
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
+            // Check i index and j index are same or not
             if (i == j) {
                 mainDiagonalSum += a[i][j];
             }
         }
     }
-    
+
+    // Sum of secondary diagonal
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
+            // Check sum of i index and j index
             if (i + j == n - 1) {
                 secondaryDiagonalSum += a[i][j];
             }
         }
     }
     
+    // Difference
     int difference = mainDiagonalSum - secondaryDiagonalSum;
     
+    // Convert into absulate
     int convertAbsolute = abs(difference);
+
     printf("%d", convertAbsolute);
     
     return 0;
-}  */
+}  
 
 
 /* int main() {

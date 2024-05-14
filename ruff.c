@@ -569,7 +569,7 @@ int main() {
     return 0;
 } */
 
-int main() {
+/* int main() {
     int r, c;
     scanf("%d %d", &r, &c);
 
@@ -604,4 +604,139 @@ int main() {
     }
 
     return 0;
+} */
+
+//* print recursion
+/* void showString(int n, int i) {
+    if (i == n) {
+        return;
+    }
+    printf("Bangladesh\n");
+    showString(n, i + 1);
 }
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    showString(n, 0);
+    return 0;
+} */
+
+
+//* print from 1 to n
+/* void showNumbers(int n, int i) {
+    if (i == n + 1) {
+        return;
+    }
+    printf("%d\n", i);
+    showNumbers(n, i + 1);
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    showNumbers(n, 1);
+    return 0;
+} */
+
+
+//* print from n to 1
+/* void showNumbers(int n, int i) {
+    if (i == 0) {
+        return;
+    }
+    printf("%d", i);
+    showNumbers(n, i - 1);
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    showNumbers(n, n);
+    return 0;
+} */
+
+
+//* print even indices
+/* void evenIndices(int a[], int n, int i) {
+    if (i == n) {
+        return;
+    }
+    evenIndices(a, n, i + 1);
+    if (i % 2 == 0) {
+        printf("%d ", a[i]);
+    }
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    int a[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
+    }
+    evenIndices(a, n, 0);
+    return 0;
+} */
+
+
+//* summation
+/* int sum(int a[], int n, int i) {
+    if (i == n) {
+        return 0;
+    }
+    int result = sum(a, n, i + 1);
+    return result + a[i];
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    int a[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
+    }
+    printf("%d", sum(a, n, 0));
+    return 0;
+} */
+
+
+//* matrix
+int main() {
+    int n;
+    scanf("%d", &n);
+ 
+    int a[n][n];
+ 
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            scanf("%d", &a[i][j]);
+        }
+    }
+ 
+    int primaryDiagonalSum = 0;
+    int secondaryDiagonalSum = 0;
+ 
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (i == j) {
+                primaryDiagonalSum += a[i][j];
+            }
+        }
+    }
+    
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (i + j == n - 1) {
+                secondaryDiagonalSum += a[i][j];
+            }
+        }
+    }
+    
+    int difference = primaryDiagonalSum - secondaryDiagonalSum;
+    
+    int convertAbsolute = abs(difference);
+    printf("%d", convertAbsolute);
+    
+    return 0;
+}  
