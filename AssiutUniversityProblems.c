@@ -1477,7 +1477,7 @@ int main() {
 
 
 // d- print digits using recursion
-/* void digitsPrint(int n) {
+void digitsPrint(int n) {
     if (n == 0) {
         return;
     }
@@ -1507,11 +1507,11 @@ int main() {
     }
 
     return 0;
-} */
+}
 
 
 // i- count vowels
-/* t countVowels(char str[], int i) {
+int countVowels(char str[], int i) {
 
     // base case
     if (str[i] == '\0') {
@@ -1540,7 +1540,7 @@ int main() {
     printf("%d", countVowels(str, 0));
 
     return 0;
-} */
+}
 
 
 // j- factorial
@@ -1566,13 +1566,12 @@ int main() {
 } */
 
 // max number
-/* int maxNumber(int a[], int n, int i) {
+int maxNumber(int a[], int n, int i) {
     if (i == n) {
         return INT_MIN;
     }
 
     int max = maxNumber(a, n, i + 1);
-
     if (a[i] > max) {
         return a[i];
     } else {
@@ -1585,7 +1584,6 @@ int main() {
     scanf("%d", &n);
 
     int a[n];
-
     for (int i = 0; i < n; i++) {
         scanf("%d", &a[i]);
     }
@@ -1595,7 +1593,7 @@ int main() {
     printf("%d", result);
     
     return 0;
-} */
+}
 
 //! MODULE 19.5 PROBLEMS
 

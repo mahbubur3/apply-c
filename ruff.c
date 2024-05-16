@@ -741,7 +741,7 @@ int main() {
     return 0;
 }   */
 
-int main() {
+/* int main() {
     int n, m;
     scanf("%d %d", &n, &m);
 
@@ -772,4 +772,66 @@ int main() {
     }     
 
     return 0;
-}
+} */
+
+
+//* mirror array
+/* int main() {
+    int n, m;
+    scanf("%d %d", &n, &m);
+
+    int a[n][m];
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    for (int i = 0; i < n; i++) {
+        for (int j = m - 1; j >= 0; j--) {
+            printf("%d ", a[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+} */
+
+
+//* sum of a matrix
+/* int main() {
+    int r, c;
+    scanf("%d %d", &r, &c);
+
+    int a[r][c], b[r][c], s[r][c];
+
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            scanf("%d", &b[i][j]);
+        }
+    }
+
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            s[i][j] = a[i][j] + b[i][j];
+        }
+    }
+
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            printf("%d ", s[i][j]);
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+} */
+
