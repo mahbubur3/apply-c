@@ -865,7 +865,7 @@ int main() {
 } */
 
 
-int main() {
+/* int main() {
     int n;
     scanf("%d", &n);
 
@@ -890,4 +890,99 @@ int main() {
     printf("%d", count);
 
     return 0;
-} 
+}  */
+
+
+/* int main() {
+    int test;
+    scanf("%d", &test);
+
+    for (int t = 0; t < test; t++) {
+        int n;
+        scanf("%d", &n);
+
+        char s[n];
+        scanf("%s", s);
+
+        int countTiger = 0, countPathaan = 0;
+
+        for (int i = 0; i < n; i++) {
+            if (s[i] == 'T') {
+                countTiger++;
+            } else if (s[i] == 'P') {
+                countPathaan++;
+            }
+        }
+
+        if (countTiger > countPathaan) {
+            printf("Tiger\n");
+        } else if (countTiger < countPathaan) {
+            printf("Pathaan\n");
+        } else {
+            printf("Draw\n");
+        }
+    }
+
+    return 0;
+} */
+
+
+/* int main() {
+    int test; 
+    scanf("%d", &test);
+
+    for (int t = 0; t < test; t++) {
+        int m, a, b, c;
+        scanf("%d %d %d %d", &m, &a, &b, &c);
+
+        int x = a * b * c;
+        int result = m / x;
+
+        if (result * x == m) {
+            printf("%d", result);
+        } else {
+            printf("-1");
+        }
+    }
+
+    return 0;
+} */
+
+
+int main() {
+    int r, c;
+    scanf("%d %d", &r, &c);
+
+    int a[r][c];
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    int flag = 1;
+
+    if (r != c) {
+        flag = 0;
+    } else {
+        for (int i = 0; i < r; i++) {
+            for (int j = 0; j < c; j++) {
+                if (i == j || i + j == r - 1) {
+                    if (a[i][j] != 1) {
+                        flag = 0;
+                    }
+                } else if (a[i][j] != 0) {
+                    flag = 0;
+                }
+            }
+        }
+    }
+
+    if (flag == 1) {
+        printf("YES\n");
+    } else {
+        printf("NO\n");
+    }
+
+    return 0;
+}
