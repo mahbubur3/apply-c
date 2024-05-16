@@ -1328,7 +1328,7 @@ int main() {
 } */
 
 
-int main() {
+/* int main() {
     int n;
     scanf("%d", &n);
  
@@ -1371,7 +1371,7 @@ int main() {
     printf("%d", convertAbsolute);
     
     return 0;
-}  
+}   */
 
 
 /* int main() {
@@ -1436,7 +1436,7 @@ int main() {
 } */
 
 
-int main() {
+/* int main() {
     int r, c;
     scanf("%d %d", &r, &c);
 
@@ -1473,11 +1473,11 @@ int main() {
     }
 
     return 0;
-}
+} */
 
 
 // d- print digits using recursion
-void digitsPrint(int n) {
+/* void digitsPrint(int n) {
     if (n == 0) {
         return;
     }
@@ -1507,11 +1507,11 @@ int main() {
     }
 
     return 0;
-}
+} */
 
 
 // i- count vowels
-int countVowels(char str[], int i) {
+/* int countVowels(char str[], int i) {
 
     // base case
     if (str[i] == '\0') {
@@ -1540,7 +1540,7 @@ int main() {
     printf("%d", countVowels(str, 0));
 
     return 0;
-}
+} */
 
 
 // j- factorial
@@ -1566,7 +1566,7 @@ int main() {
 } */
 
 // max number
-int maxNumber(int a[], int n, int i) {
+/* int maxNumber(int a[], int n, int i) {
     if (i == n) {
         return INT_MIN;
     }
@@ -1593,7 +1593,7 @@ int main() {
     printf("%d", result);
     
     return 0;
-}
+} */
 
 //! MODULE 19.5 PROBLEMS
 
@@ -1747,3 +1747,15 @@ int main() {
 
     return 0;
 } */
+
+
+int main() {
+    float discount, afterDiscountPrice;
+    scanf("%f %f", &discount, &afterDiscountPrice);
+
+    float x = 100 - discount;
+    float originalPrice = (100/x) * afterDiscountPrice; 
+    printf("%0.2f", originalPrice);   
+
+    return 0;
+}
