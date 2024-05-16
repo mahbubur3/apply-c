@@ -1749,13 +1749,115 @@ int main() {
 } */
 
 
-int main() {
+/* int main() {
     float discount, afterDiscountPrice;
     scanf("%f %f", &discount, &afterDiscountPrice);
 
     float x = 100 - discount;
     float originalPrice = (100/x) * afterDiscountPrice; 
     printf("%0.2f", originalPrice);   
+
+    return 0;
+} */
+
+
+/* int main() {
+    int a, b, s;
+    scanf("%d %c %d", &a, &s, &b);
+
+    if (s == '>') {
+        if (a > b) {
+            printf("Right\n");
+        } else {
+            printf("Wrong\n");
+        }
+    }
+
+    if (s == '<') {
+        if (a < b) {
+            printf("Right\n");
+        } else {
+            printf("Wrong\n");
+        }
+    }
+
+    if (s == '=') {
+        if (a == b) {
+            printf("Right\n");
+        } else {
+            printf("Wrong\n");
+        }
+    }
+
+    return 0;
+} */
+
+
+/* int main() {
+    // char f1[50];
+    // char s1[50];
+    // char f2[50];
+    // char s2[50];
+    char f1, f2, s1, s2;
+
+    scanf("%s %s", f1, s1);
+    scanf("%s %s", f2, s2);
+
+    if (strcmp(s1, s2) == 0) {
+        printf("ARE Brothers\n");
+    } else {
+        printf("NOT\n");
+    }
+
+    return 0;
+} */
+
+/* long long int summation(int a[], int n, int i) {
+    if (i == n) {
+        return 0;
+    }
+
+    long long int result = summation(a, n, i + 1);
+
+    return result + a[i];
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    int a[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
+    }
+
+    printf("%lld", summation(a, n, 0));
+
+    return 0;
+} */
+
+int arrayAverage(int a[], int n, int i) {
+    if (i == n) {
+        return 0;
+    }
+
+    int dueAvg = arrayAverage(a, n, i + 1);
+    int r = a[i] + dueAvg;
+    return r/n;
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    int a[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
+    }
+
+    int result = arrayAverage(a, n, 0);
+
+    printf("%d", result);
 
     return 0;
 }
