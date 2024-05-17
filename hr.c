@@ -413,7 +413,7 @@ int main() {
 */
 
 
-// ASSIGNMENT 3
+//! ASSIGNMENT 3
 /*
 int main() {
     int n, s, d, h;
@@ -572,42 +572,102 @@ int main() {
 }
 */
 
-
-// int main() {
-//     int t;
-//     scanf("%d", &t);
+//! FINAL EXAM
+/* int main() {
+    int t;
+    scanf("%d", &t);
     
-//     for (int i = 0; i < t; i++) {
-//         int n;
-//         scanf("%d", &n);
+    for (int i = 0; i < t; i++) {
+        int n;
+        scanf("%d", &n);
         
-//         char s[n];
-//         scanf("%s", s);
+        char s[n];
+        scanf("%s", s);
         
-//         int t = 0, p = 0;
+        int t = 0, p = 0;
         
-//         for (int j = 0; j < n; j++) {
-//             if (s[j] == 'T') {
-//                 t++;
-//             } else {
-//                 p++;
-//             }
-//         }
+        for (int j = 0; j < n; j++) {
+            if (s[j] == 'T') {
+                t++;
+            } else {
+                p++;
+            }
+        }
         
-//         if (t > p) {
-//             printf("Tiger\n");
-//         } else if (t < p) {
-//             printf("Pathaan\n");
-//         } else {
-//             printf("Draw\n");
-//         }
-//     }
+        if (t > p) {
+            printf("Tiger\n");
+        } else if (t < p) {
+            printf("Pathaan\n");
+        } else {
+            printf("Draw\n");
+        }
+    }
     
-//     return 0;
-// }
+    return 0;
+} */
 
-/*
-int main() {
+
+/* int main() {
+    int t;
+    scanf("%d", &t);
+
+    for (int i = 0; i < t; i++) {
+        long long int totalMul, a, b, c;
+        scanf("%lld %lld %lld %lld", &totalMul, &a, &b, &c);
+    
+        long long int mulAbc = a * b * c;
+        long long int result = totalMul / mulAbc;
+    
+        if (mulAbc * result == totalMul) {
+            printf("%lld\n", result);
+        } else {
+            printf("-1\n");
+        }
+    }
+
+    return 0;
+} */
+
+
+/* int main() {
+    int n, m;
+    scanf("%d %d", &n, &m);
+
+    int a[n][m];
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    int flag = 1;
+    if (n != m) {
+        flag = 0;
+    } else {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (i == j || i + j == n - 1) {
+                    if (a[i][j] != 1) {
+                        flag = 0;
+                    }
+                } else if (a[i][j] != 0) {
+                    flag = 0;
+                }
+            }
+        }
+    }
+
+    if (flag == 1) {
+        printf("YES\n");
+    } else {
+        printf("NO\n");
+    }
+    
+    return 0;
+} */
+
+
+/* int main() {
     int n, m;
     scanf("%d %d", &n, &m);
 
@@ -630,8 +690,45 @@ int main() {
     }
 
     return 0;
-}
-*/
+} */
+
+
+/* int main() {
+    int n, s, k;
+    scanf("%d", &n);
+
+    s = (10 + n) / 2;
+    k = 1;
+
+    for (int i = 0; i < ((10 + n) / 2) + 1; i++) {
+        for (int j = 0; j < s; j++) {
+            printf(" ");
+        }
+
+        for (int j = 0; j < k; j++) {
+            printf("*");
+        }
+
+        s--;
+        k += 2;
+
+        printf("\n");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+            printf(" ");
+        }
+
+        for (int j = 0; j < n; j++) {
+            printf("*");
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+} */
 
 /*
 int main() {
@@ -676,103 +773,3 @@ int main() {
     return 0;
 }
 */
-
-
-// int main() {
-//     int n, m;
-//     scanf("%d %d", &n, &m);
-
-//     int a[n][m];
-//     for (int i = 0; i < n; i++) {
-//         for (int j = 0; j < m; j++) {
-//             scanf("%d", &a[i][j]);
-//         }
-//     }
-
-//     int flag = 1;
-//     if (n != m) {
-//         flag = 0;
-//     } else {
-//         for (int i = 0; i < n; i++) {
-//             for (int j = 0; j < m; j++) {
-//                 if (i == j || i + j == n - 1) {
-//                     if (a[i][j] != 1) {
-//                         flag = 0;
-//                     }
-//                 } else if (a[i][j] != 0) {
-//                     flag = 0;
-//                 }
-//             }
-//         }
-//     }
-
-//     if (flag == 1) {
-//         printf("YES\n");
-//     } else {
-//         printf("NO\n");
-//     }
-    
-//     return 0;
-// }
-
-
-// int main() {
-//     int t;
-//     scanf("%d", &t);
-
-//     for (int i = 0; i < t; i++) {
-//         long long int totalMul, a, b, c;
-//         scanf("%lld %lld %lld %lld", &totalMul, &a, &b, &c);
-    
-//         long long int mulAbc = a * b * c;
-//         long long int result = totalMul / mulAbc;
-    
-//         if (mulAbc * result == totalMul) {
-//             printf("%lld\n", result);
-//         } else {
-//             printf("-1\n");
-//         }
-//     }
-
-//     return 0;
-// }
-
-
-int main() {
-    int n, s, k;
-    scanf("%d", &n);
-
-    s = (10 + n) / 2;
-    k = 1;
-
-    for (int i = 0; i < ((10 + n) / 2) + 1; i++) {
-        for (int j = 0; j < s; j++) {
-            printf(" ");
-        }
-
-        for (int j = 0; j < k; j++) {
-            printf("*");
-        }
-
-        s--;
-        k += 2;
-
-        printf("\n");
-    }
-
-    for (int i = 0; i < 5; i++) {
-        for (int j = 0; j < 5; j++) {
-            printf(" ");
-        }
-
-        for (int j = 0; j < n; j++) {
-            printf("*");
-        }
-
-        printf("\n");
-    }
-
-    return 0;
-}
-
-
