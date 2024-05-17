@@ -1926,12 +1926,11 @@ int main() {
 } */
 
 
-int main() {
+/* int main() {
     int n, m;
     scanf("%d %d", &n, &m);
 
     int sum = 0;
-
     for (int i = m; i <= n; i++) {
         sum += i;
     }
@@ -1941,4 +1940,29 @@ int main() {
     }
 
     return 0;
-}
+} */
+
+
+/* int main() {
+    int test;
+    scanf("%d", &test);
+
+    for (int t = 0; t < test; t++) {
+        int n;
+        scanf("%d", &n);
+
+        long long fac = 1;
+        
+        if (n == 0) {
+            printf("%lld\n", fac);
+        } else {
+            for (int i = 1; i <= n; i++) {
+                fac = i * fac;
+            }
+
+            printf("%lld\n", fac);
+        }
+    }
+
+    return 0;
+} */
