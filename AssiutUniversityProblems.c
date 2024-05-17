@@ -1843,7 +1843,6 @@ double arrayAverage(int a[], int n, int i) {
     }
  
     double dueAvg = arrayAverage(a, n, i + 1);
- 
     return a[i] + dueAvg;
 }
  
@@ -1857,7 +1856,6 @@ int main() {
     }
  
     double avg = arrayAverage(a, n, 0);
- 
     printf("%0.6lf", avg / n);
  
     return 0;
