@@ -1836,28 +1836,29 @@ int main() {
     return 0;
 } */
 
-int arrayAverage(int a[], int n, int i) {
+
+double arrayAverage(int a[], int n, int i) {
     if (i == n) {
         return 0;
     }
-
-    int dueAvg = arrayAverage(a, n, i + 1);
-    int r = a[i] + dueAvg;
-    return r/n;
+ 
+    double dueAvg = arrayAverage(a, n, i + 1);
+ 
+    return a[i] + dueAvg;
 }
-
+ 
 int main() {
     int n;
     scanf("%d", &n);
-
+ 
     int a[n];
     for (int i = 0; i < n; i++) {
         scanf("%d", &a[i]);
     }
-
-    int result = arrayAverage(a, n, 0);
-
-    printf("%d", result);
-
+ 
+    double avg = arrayAverage(a, n, 0);
+ 
+    printf("%0.6lf", avg / n);
+ 
     return 0;
 }
