@@ -730,7 +730,7 @@ int main() {
     return 0;
 } */
 
-/*
+
 int main() {
     int test;
     scanf("%d", &test);
@@ -772,4 +772,3 @@ int main() {
     
     return 0;
 }
-*/

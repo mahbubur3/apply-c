@@ -4,8 +4,8 @@
 #include <math.h>
 #include <stdlib.h>
 
-/*
-int main() {
+
+/* int main() {
     long long int x, y;
     scanf("%lld %lld", &x, &y);
     
@@ -18,18 +18,17 @@ int main() {
     printf("%lld - %lld = %lld\n", x, y, sub);
     
     return 0;
-}
-*/
+} */
 
-// int main() {
-//     long long int a, b, c, d;
-//     scanf("%lld %lld %lld %lld", &a, &b, &c, &d);
+/* int main() {
+    long long int a, b, c, d;
+    scanf("%lld %lld %lld %lld", &a, &b, &c, &d);
     
-//     long long int equation = (a * b) - (c * d);
-//     printf("Difference = %lld", equation);
+    long long int equation = (a * b) - (c * d);
+    printf("Difference = %lld", equation);
     
-//     return 0;
-// }
+    return 0;
+} */
 
 
 // int main() {
@@ -83,63 +82,58 @@ int main() {
 
 
 // show numbers who disible by 3 and 5
-// int main() {
-//     int n, i;
-//     scanf("%d", &n);
+/* int main() {
+    int n, i;
+    scanf("%d", &n);
     
-//     for (i = 1; i <= n; i++) {
-//         if (i % 3 == 0 && i % 5 == 0) {
-//             printf("%d\n", i);
-//         }
-//     }
+    for (i = 1; i <= n; i++) {
+        if (i % 3 == 0 && i % 5 == 0) {
+            printf("%d\n", i);
+        }
+    }
     
-//     return 0;
-// }
+    return 0;
+} */
 
 
+/* int main() {
+	int a, b;
+    scanf("%d %d", &a, &b);
 
-// #include <stdio.h>
-// #include <string.h>
-// #include <math.h>
-// #include <stdlib.h>
+    float x, y;
+    scanf("%f %f", &x, &y);
+    
+    int sum = a + b;
+    int sub = a - b;
 
-// int main()
-// {
-// 	int a, b;
-//     scanf("%d %d", &a, &b);
-//     float x, y;
-//     scanf("%f %f", &x, &y);
+    printf("%d %d\n", sum, sub);
     
-//     int sum = a + b;
-//     int sub = a - b;
-//     printf("%d %d\n", sum, sub);
+    float sum2 = x + y;
+    float sub2 = x - y;
+
+    printf("%0.1f %0.1f", sum2, sub2);
     
-//     float sum2 = x + y;
-//     float sub2 = x - y;
-//     printf("%0.1f %0.1f", sum2, sub2);
-    
-//     return 0;
-// }
+    return 0;
+} */
 
 
-
-// int main() {
-//     int n, i;
-//     scanf("%d", &n);
+/* int main() {
+    int n, i;
+    scanf("%d", &n);
     
-//     if (n == 1) {
-//         printf("-1\n");
-//         return 0;
-//     }
+    if (n == 1) {
+        printf("-1\n");
+        return 0;
+    }
     
-//     for (i = 1; i <= n; i++) {
-//         if (i % 2 == 0) {
-//             printf("%d\n", i);
-//         }
-//     }
+    for (i = 1; i <= n; i++) {
+        if (i % 2 == 0) {
+            printf("%d\n", i);
+        }
+    }
     
-//     return 0;
-// }
+    return 0;
+} */
 
 
 
@@ -177,8 +171,8 @@ int main() {
 // }
 
 
-/*
-int main() {
+
+/* int main() {
     int a, b, c;
     scanf("%d %d %d", &a, &b, &c);
     
@@ -202,12 +196,11 @@ int main() {
     }
     
     printf("%d %d", minNum, maxNum);
-}
-*/
+} */
 
 
-/*
-int main() {
+
+/* int main() {
     long long int n, m;
     scanf("%lld %lld", &n, &m);
     
@@ -218,8 +211,7 @@ int main() {
     printf("%lld", sum);
     
     return 0;
-}
-*/
+} */
 
 
 /*
@@ -245,8 +237,7 @@ int main() {
 */
 
 
-/*
-int main() {
+/* int main() {
     int a, b, c, d;
     scanf("%d %d %d %d", &a, &b, &c, &d);
     
@@ -255,52 +246,51 @@ int main() {
     printf("%02lld", mul);
     
     return 0;
-}
-*/
+} */
 
 
-// int main() {
-//     int n, i;
-//     scanf("%d", &n);
+/* int main() {
+    int n, i;
+    scanf("%d", &n);
     
-//     for (i = 1; i <= n; i++) {
-//         if (n % i == 0) {
-//             printf("%d\n", i);
-//         }
-//     }
+    for (i = 1; i <= n; i++) {
+        if (n % i == 0) {
+            printf("%d\n", i);
+        }
+    }
     
-//     return 0;
-// }
+    return 0;
+} */
 
 
-// int main(){
-//     int n;
-//     scanf("%d", &n);
+/* int main(){
+    int n;
+    scanf("%d", &n);
     
-//     if(n % n == 0 && n % 1 == 0) {
-//         printf("Prime");
-//     } else {
-//         printf("Not prime");
-//     }
+    if(n % n == 0 && n % 1 == 0) {
+        printf("Prime");
+    } else {
+        printf("Not prime");
+    }
     
-//     return 0;
-// }
+    return 0;
+} */
 
 
 
-// int main() {    
-//     int n, sum=0, m;
-//     scanf("%d",&n);  
+/* int main() {    
+    int n, sum=0, m;
+    scanf("%d",&n);  
     
-//     while(n > 0) {    
-//         m = n % 10;    
-//         sum = sum + m;    
-//         n = n / 10;
-//     }  
+    while(n > 0) {    
+        m = n % 10;    
+        sum = sum + m;    
+        n = n / 10;
+    }  
     
-//     printf("%d",sum);    
-//     return 0;  
-// }
+    printf("%d",sum);    
+    return 0;  
+} */
 
 
 
@@ -1837,7 +1827,7 @@ int main() {
 } */
 
 
-double arrayAverage(int a[], int n, int i) {
+/* double arrayAverage(int a[], int n, int i) {
     if (i == n) {
         return 0;
     }
@@ -1858,5 +1848,97 @@ int main() {
     double avg = arrayAverage(a, n, 0);
     printf("%0.6lf", avg / n);
  
+    return 0;
+} */
+
+
+/* double showAverage(double a[], int n, int i) {
+    if (i == n) {
+        return 0;
+    }
+
+    double remainingAvg = showAverage(a, n, i + 1);
+    return remainingAvg + a[i];
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    double a[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%lf", &a[i]);
+    }
+
+    double avg = showAverage(a, n, 0);
+    printf("%0.7lf", avg / n);
+
+    return 0;
+} */
+
+
+/* int main() {
+    int n;
+    scanf("%d", &n);
+
+    int s = 1;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < s; j++) {
+            printf("*");
+        }
+
+        s++;
+        printf("\n");
+    }
+
+    return 0;
+} */
+
+
+/* int main() {
+    int test;
+    scanf("%d", &test);
+
+    for (int t = 0; t < test; t++) {
+        int x, y;
+        scanf("%d %d", &x, &y);
+
+        int sum = 0;
+
+        if (x < y) {
+            for (int i = x + 1; i < y; i++) {
+                if (i % 2 != 0) {
+                    sum += i;
+                }
+            }
+        } else if (x > y) {
+            for (int i = y + 1; i < x; i++) {
+                if (i % 2 != 0) {
+                    sum += i;
+                }
+            }
+        }
+
+        printf("%d\n", sum);
+    }
+    
+    return 0;
+} */
+
+
+int main() {
+    int n, m;
+    scanf("%d %d", &n, &m);
+
+    int sum = 0;
+
+    for (int i = m; i <= n; i++) {
+        sum += i;
+    }
+
+    for (int i = m; i <= n; i++) {
+        printf("%d ", i);
+    }
+
     return 0;
 }

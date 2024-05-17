@@ -1013,7 +1013,7 @@ int main() {
 } */
 
 
-int main() {
+/* int main() {
     int n;
     scanf("%d", &n);
 
@@ -1032,4 +1032,4 @@ int main() {
     printf("%0.2f", avg);
 
     return 0;
-}
+} */
