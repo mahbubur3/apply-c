@@ -45,14 +45,15 @@
 
 
 // dereference
-// int main() {
-//     double x = 5.25;
-//     double* ptr = &x;
-//     *ptr = 10.20;
-//     printf("value of x: %0.2lf\n", *ptr);
+int main() {
+    double x = 5.25;
+    double* ptr = &x;
     
-//     return 0;
-// }
+    *ptr = 10.20;
+    printf("value of x: %0.2lf\n", *ptr);
+    
+    return 0;
+}
 
 
 /*
