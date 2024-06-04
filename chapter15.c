@@ -1,54 +1,53 @@
 #include <stdio.h>
 #include <string.h>
 
-// int main() {
-//     int n = 23;
-//     printf("%p", &n);
-// }
+int main() {
+    int n = 23;
+    printf("%p", &n);
+}
 
 
-// int main() {
-//     int n = 20;
-//     int* ptr = &n;
-//     printf("%d\n", *ptr);
+int main() {
+    int n = 20;
+    int* ptr = &n;
+    printf("%d\n", *ptr);
     
-//     return 0;
-// }
+    return 0;
+}
 
 
 
-// int main() {
-//     int x = 100;
-//     int* ptr = &x;
-//     printf("Address of x: %p\n", &x);
-//     printf("Value of ptr: %p\n", ptr);
-// }
+int main() {
+    int x = 100;
+    int* ptr = &x;
+    printf("Address of x: %p\n", &x);
+    printf("Value of ptr: %p\n", ptr);
+}
 
 
-// int main() {
-//     int x = 100;
-//     int* ptr = &x;
-//     x = 200;
-//     *ptr = 200; // x = 200 and *ptr = 200 are same
-//     printf("value of x: %d\n", x);
-//     printf("value of x: %d\n", *ptr);
-// }
+int main() {
+    int x = 100;
+    int* ptr = &x;
+    x = 200;
+    *ptr = 200; // x = 200 and *ptr = 200 are same
+    printf("value of x: %d\n", x);
+    printf("value of x: %d\n", *ptr);
+}
 
 
-// int main() {
-//     double x = 5.25;
-//     double* ptr = &x;
-//     printf("value of x: %0.2lf\n", x);
+int main() {
+    double x = 5.25;
+    double* ptr = &x;
+    printf("value of x: %0.2lf\n", x);
 
-//     return 0;
-// }
+    return 0;
+}
 
 
 // dereference
 int main() {
     double x = 5.25;
     double* ptr = &x;
-    
     *ptr = 10.20;
     printf("value of x: %0.2lf\n", *ptr);
     
@@ -56,7 +55,6 @@ int main() {
 }
 
 
-/*
 int main() {
     double x = 5.25;
     double* ptr = &x;
@@ -68,10 +66,8 @@ int main() {
     
     return 0;
 }
-*/
 
 
-/*
 // CALL BY VALUE
 void fun(int x) {
     x = 20; // nothing affect
@@ -84,24 +80,22 @@ int main() {
 
     return 0;
 }
-*/
 
 
 // CALL BY REFERENCE
+void fun(int *p) {
+    printf("%p\n", p);
+}
 
-// void fun(int* p) {
-//     printf("%p\n", p);
-// }
+int main() {
+    int x = 100;
+    fun(&x);
 
-// int main() {
-//     int x = 100;
-//     fun(&x);
-
-//     return 0;
-// }
+    return 0;
+}
 
 
-/* void fun(int* p, int* q) {
+void fun(int* p, int* q) {
     // printf("value of x in main function: %d\n", *p);
     *p = 500;
     *q = 1000;
@@ -113,11 +107,9 @@ int main() {
     printf("%d %d", x, y);
 
     return 0;
-} */
+}
 
 
-
-/*
 // ARRAY AND POINTER
 int main() {
     int arr[5] = {50, 60, 70, 80, 90};
@@ -127,12 +119,10 @@ int main() {
 
     return 0;
 }
-*/
-
 
 
 // FUNCTION AND ARRAY
-/* void fun(int arr[], int n) {
+void fun(int arr[], int n) {
     for (int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
     }
@@ -143,9 +133,10 @@ int main() {
     fun(arr, 5);
 
     return 0;
-} */
+}
 
-/* void fun(int* arr, int n) {
+
+void fun(int* arr, int n) {
     for (int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
     }
@@ -156,7 +147,7 @@ int main() {
     fun(arr, 5);
 
     return 0;
-} */
+}
 
 
 
