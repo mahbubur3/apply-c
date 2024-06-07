@@ -3,7 +3,6 @@
 
 
 // RETURN + PARAMETER
-/*
 int sum(int a, int b) {
     int operation = a + b;
     
@@ -16,11 +15,8 @@ int main() {
     
     return 0;
 }
-*/
 
 
-
-/*
 int calculation(int x, int y) {
     int mul = x * y;
     
@@ -33,11 +29,9 @@ int main() {
     
     return 0;
 }
-*/
 
 
 
-/*
 int sum(int a, int b) {
     int operation = a + b;
     
@@ -53,11 +47,9 @@ int main() {
     
     return 0;
 }
-*/
 
 
 
-/*
 // RETURN + NO PARAMETER
 int sum() {
     int a = 100, b = 500;
@@ -72,11 +64,9 @@ int main() {
     
     return 0;
 }
-*/
 
 
 
-/*
 // empty parameter is not safe so use void as parameter
 int sum(void) {
     int a = 100, b = 500;
@@ -91,10 +81,9 @@ int main() {
     
     return 0;
 }
-*/
 
 
-/*
+
 int sum() {
     int a, b;
     scanf("%d %d", &a, &b);
@@ -109,9 +98,9 @@ int main() {
     
     return 0;
 }
-*/
 
-/*
+
+
 // NO RETURN + PARAMETER
 void sum(int x, int y) {
     int result = x + y;
@@ -126,10 +115,10 @@ int main() {
     
     return 0;
 }
-*/
 
 
-/*
+
+
 // NO RETURN + NO PARAMETER
 void sum(void) {
     int a, b;
@@ -144,38 +133,36 @@ int main() {
     
     return 0;
 }
-*/
+
 
 
 // POINTERS
-// int main() {
-//     int num = 23;
+int main() {
+    int num = 23;
+    printf("%d\n", num); // show value of num
+    printf("%p", &num); // show memory address of num
     
-//     printf("%d\n", num); // show value of num
-//     printf("%p", &num); // show memory address of num
-    
-//     return 0;
-// }
+    return 0;
+}
 
 
-
-// int main() {
-//     int n = 20;
-//     int* ptr = &n;
-//     printf("%p\n", ptr);
+int main() {
+    int n = 20;
+    int* ptr = &n;
+    printf("%p\n", ptr);
     
-//     return 0;
-// }
+    return 0;
+}
 
 
 // show dereference
-// int main() {
-//     int n = 20;
-//     int* ptr = &n;
-//     printf("%d\n", *ptr);
+int main() {
+    int n = 20;
+    int* ptr = &n;
+    printf("%d\n", *ptr);
     
-//     return 0;
-// }
+    return 0;
+}
 
 
 int main() {
