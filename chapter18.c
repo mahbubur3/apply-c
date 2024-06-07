@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 // 2D Arrays or Two-Dimensional Arrays
-
 // int matrix[2][3] = {{1, 2, 3}, {10, 20, 30}};
 
 
-/* int main() {
+int main() {
     // access elements
     int mat[2][3] = {{1, 2, 3}, {10, 20, 30}};
     // printf("%d", mat[1][1]);
@@ -19,11 +18,11 @@
     }
 
     return 0;
-} */
+}
 
 // ---------------
 // user INPUT OUTPUT 
-/* int main() {
+int main() {
     int arr[5][3];
 
     for (int i = 0; i < 5; i++) {
@@ -41,30 +40,32 @@
     }
 
     return 0;
-} */
+}
 
 
-/*
 // print exact single row
 int main() {
     int row, col;
     scanf("%d %d", &row, &col);
+    
     int arr[row][col];
     for (int i = 0; i < row; i++) {
         for (int j = 0; j < col; j++) {
             scanf("%d", &arr[i][j]);
         }
     }
+    
     int s;
     scanf("%d", &s);
     for (int i = 0; i < col; i++) {
         printf("%d ", arr[s][i]);
     }
+    
     return 0;
 }
-*/
 
-/*
+
+
 // print exact single row with validation
 int main() {
     int row, col;
@@ -90,9 +91,8 @@ int main() {
     
     return 0;
 }
-*/
 
-/*
+
 int main() {
     int row, col;
     scanf("%d %d", &row, &col);
@@ -112,11 +112,10 @@ int main() {
     
     return 0;
 }
-*/
 
 
 // CHECK ZERO MATRIX OR NOT
-/* int main() {
+int main() {
     int row, col;
     scanf("%d %d", &row, &col);
 
@@ -144,12 +143,12 @@ int main() {
     }
 
     return 0;
-} */
+}
 
 
 // CHECK DIAGONAL MATRIX OR NOT
 // Primary
-/* int main() {
+int main() {
     int row, col;
     scanf("%d %d", &row, &col);
 
@@ -185,10 +184,10 @@ int main() {
     }
 
     return 0;
-} */
+}
 
 // Secondary
-/* int main() {
+int main() {
     int row, col;
     scanf("%d %d", &row, &col);
 
@@ -223,7 +222,7 @@ int main() {
     }
 
     return 0;
-} */
+}
 
 
 // CHECK SCALAR MATRIX OR NOT
@@ -270,7 +269,7 @@ int main() {
 
 // CHECK UNIT MATRIX OR NOT
 // Primary
-/* int main() {
+int main() {
     int row, col;
     scanf("%d %d", &row, &col);
 
@@ -306,7 +305,7 @@ int main() {
     }
 
     return 0;
-} */
+}
 
 
 // Secondary
