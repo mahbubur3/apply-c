@@ -13,7 +13,7 @@ int main() {
 }
 
 
-/* void fiveToOne(int i) {
+void fiveToOne(int i) {
     if (i == 0) {
         return;
     }
@@ -24,10 +24,10 @@ int main() {
 int main() {
     fiveToOne(5);
     return 0;
-} */
+}
 
 
-/* void printArray(int arr[], int n, int i) {
+void printArray(int arr[], int n, int i) {
     if (i == n) {
         return;
     }
@@ -43,13 +43,13 @@ int main() {
     }
     printArray(arr, n, 0);
     return 0;
-} */
+}
 
 // =================================== RECAP
 
 // PRINT 1 TO 10
 // 1 2 3 4 5 6 7 8 9 10
-/* int oneToTen(int i) {
+int oneToTen(int i) {
     if (i == 6) {
         return 0;
     }
@@ -59,12 +59,12 @@ int main() {
 int main() {
     oneToTen(1);
     return 0;
-} */
+}
 
 
 // PRINT 10 TO 1
 // 10 9 8 7 6 5 4 3 2 1
-/* void tenToOne(int i) {
+void tenToOne(int i) {
     if (i == 0) {
         return;
     }
@@ -74,7 +74,7 @@ int main() {
 int main() {
     tenToOne(10);
     return 0;
-} */
+}
 
 
 // ARRAY PRINT
