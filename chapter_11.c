@@ -3,20 +3,20 @@
 
 
 // COPY STRING
-// int main() {
-//     char s1[10], s2[10];
-//     scanf("%s %s", s1, s2);
+int main() {
+    char s1[10], s2[10];
+    scanf("%s %s", s1, s2);
     
-//     for (int i = 0; i <= strlen(s2); i++) {
-//         s1[i] = s2[i];
-//     }
-//     printf("%s %s", s1, s2);
+    for (int i = 0; i <= strlen(s2); i++) {
+        s1[i] = s2[i];
+    }
+    printf("%s %s", s1, s2);
 
-//     return 0;
-// }
+    return 0;
+}
 
 
-/*
+
 int main() {
     char a[10], b[10];
     scanf("%s %s", a, b);
@@ -28,9 +28,9 @@ int main() {
     
     return 0;
 }
-*/
 
-/*
+
+
 // implemented buit-in function
 int main() {
     char s1[10], s2[10];
@@ -41,10 +41,10 @@ int main() {
 
     return 0;
 }
-*/
 
 
-/*
+
+
 // String Lexicographical Comparison with buit-in function
 int main() {
     char a[100], b[100];
@@ -61,10 +61,9 @@ int main() {
     
     return 0;
 }
-*/
+
 
 // string concatenation
-/*
 int main() {
     char a[200], b[200];
     scanf("%s %s", a, b);
@@ -78,11 +77,10 @@ int main() {
     
     return 0;
 }
-*/
 
 
-/*
-// with function
+
+// using built-in function
 int main() {
     char a[200], b[200];
     scanf("%s %s", a, b);
@@ -92,10 +90,10 @@ int main() {
     
     return 0;
 }
-*/
 
 
-/*
+
+
 int main() {
     char a[200], b[200];
     scanf("%s %s", a, b);
@@ -110,7 +108,7 @@ int main() {
     
     return 0;
 }
-*/
+
 
 
 // COUNTING OR FREQUENCY ARRAY
@@ -138,28 +136,27 @@ int main() {
 
 
 // COUNTING OR FREQUENCY ARRAY - character
-// with alphabetic serial
-// int main() {
-//     char str[100];
-//     scanf("%s", str);
+with alphabetic serial
+int main() {
+    char str[100];
+    scanf("%s", str);
+    int count[26] = {0};
+    for (int i = 0; i < strlen(str); i++) {
+        int intValue = str[i] - 'a';
+        count[intValue]++;
+    }
     
-//     int count[26] = {0};
-//     for (int i = 0; i < strlen(str); i++) {
-//         int intValue = str[i] - 'a';
-//         count[intValue]++;
-//     }
+    for (int i = 0; i < 26; i++) {
+        if(count[i] != 0) {
+            printf("%c - %d\n", i + 'a', count[i]);
+        }
+    }
     
-//     for (int i = 0; i < 26; i++) {
-//         if(count[i] != 0) {
-//             printf("%c - %d\n", i + 'a', count[i]);
-//         }
-//     }
-    
-//     return 0;
-// }
+    return 0;
+}
 
 
-/*
+
 // with user input serial
 int main() {
     char str[100];
@@ -183,5 +180,3 @@ int main() {
     
     return 0;
 }
-*/
-
