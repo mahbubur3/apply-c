@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 //-------------- arithmetic operators: +, -, /, *, %
-/*
 int main() {
     int a = 90, b = 10;
     int sum = a + b;
@@ -9,9 +8,9 @@ int main() {
     printf("%d", sum);
     return 0;
 }
-*/
 
-/*
+
+
 // if i need decimal number
 int main() {
     int a = 21, b = 2;
@@ -20,7 +19,7 @@ int main() {
     printf("%f", divide);
     return 0;
 }
-*/
+
 
 //-------------- relational operators: <, >, <=, =>, ==, !=
 
@@ -30,7 +29,6 @@ int main() {
 
 // CONDITIONAL STATEMENT
 // if, else, else if
-/*
 int main() {
     int amount;
     scanf("%d", &amount);
@@ -43,10 +41,10 @@ int main() {
 
     return 0;
 }
-*/
 
 
-/*
+
+
 int main() {
     int amount;
     scanf("%d", &amount);
@@ -59,10 +57,10 @@ int main() {
 
     return 0;
 }
-*/
 
 
-/*
+
+
 int main() {
     int amount;
     scanf("%d", &amount);
@@ -77,10 +75,10 @@ int main() {
 
     return 0;
 }
-*/
 
 
-/*
+
+
 // nested if else or nested condition
 int main() {
     int amount;
@@ -101,7 +99,8 @@ int main() {
 
     return 0;
 }
-*/
+
+
 
 int main() {
     int x = 5/2;
