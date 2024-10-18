@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 // PATTERN ONE 
-/*
 int main() {
     int n, k = 1;
     scanf("%d", &n);
@@ -17,9 +16,8 @@ int main() {
 
     return 0;
 }
-*/
 
-/*
+
 int main() {
     int n;
     scanf("%d", &n);
@@ -36,9 +34,9 @@ int main() {
     
     return 0;
 }
-*/
 
-/*
+
+
 // PATTERN TWO 
 int main() {
     int n;
@@ -62,12 +60,12 @@ int main() {
     
     return 0;
 }
-*/
+
 
 
 
 // PATTERN THREE
-/* int main() {
+int main() {
     int n, k = 1;
     scanf("%d", &n);
     
@@ -80,10 +78,10 @@ int main() {
     }
     
     return 0;
-} */
+}
 
 
-/*
+
 // PATTERN THREE with reverse
 int main() {
     int n, k;
@@ -102,12 +100,12 @@ int main() {
     
     return 0;
 }
-*/
+
 
 
 
 // PATTERN FOUR
-/* int main() {
+int main() {
     int n, s, k;
     scanf("%d", &n);
     
@@ -135,11 +133,10 @@ int main() {
     }
     
     return 0;
-} */
+}
 
 
 
-/*
 // check sum of two value is equal or not
 int main() {
     int n;
@@ -171,11 +168,11 @@ int main() {
     
     return 0;
 }
-*/
+
 
 
 // SELECTION SORT 
-/* int main() {
+int main() {
     int n;
     scanf("%d", &n);
     
@@ -211,7 +208,7 @@ int main() {
     }
     
     return 0;
-} */
+}
 
 
 // DIFFERENT TYPE OF PETTERN
